@@ -2,27 +2,58 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Viajes de Ensueño</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio | Viajes de Ensueño</title>
+  <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
+	<div class="social-bar">
+	  <a href="https://facebook.com" target="_blank"><img src="img/facebook.png" alt="Facebook"></a>
+	  <a href="https://instagram.com" target="_blank"><img src="img/instagram.png" alt="Instagram"></a>
+	  <a href="https://youtube.com" target="_blank"><img src="img/youtube.png" alt="YouTube"></a>
+	  <a href="https://twitter.com" target="_blank"><img src="img/x.png" alt="X"></a>
+	</div>
+
   <header>
     <nav class="navbar">
       <div class="logo">
-	    <img src="img/logo.jpg" alt="Logo de Viajes de Ensueño">
-	    <span>Viajes de Ensueño</span>
+        <img src="img/logo.png" alt="Logo">
+        <span>Viajes de Ensueño</span>
       </div>
-      <ul class="nav-links">
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="quienes-somos.html">Quiénes somos</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
+      <ul class="nav-opciones">
+        <li><a href="travel_recommendation.html">Inicio</a></li>
+        <li><a href="destinos.html">Destinos</a></li>
+        <li><a href="acerca.html">Acerca de Nosotros</a></li>
+        <li><a href="contactanos.html">Contáctanos</a></li>
       </ul>
-    <form class="busqueda">
-      <input type="text" placeholder="Buscar destinos...">
-      <button type="submit">Buscar</button>
-    </form>
+		<form class="busqueda">
+  		  <input type="text" id="campo-busqueda" placeholder="Buscar destinos...">
+		  <button onclick="buscarDestinos()">Buscar</button>
+          <button onclick="limpiarBusqueda()">Limpiar</button>
+		</form>	  
     </nav>
   </header>
+
+<main class="contenido">
+  <section class="bienvenida">
+    <h1>Bienvenido a Viajes de Ensueño</h1>
+    <p>¡Bienvenido a <strong>Viajes de Ensueño</strong>, tu compañera ideal para descubrir el mundo!</p>
+    <p>Somos una agencia de viajes apasionada por crear experiencias únicas, diseñadas a tu medida, con destinos que te inspiren y te llenen de recuerdos inolvidables.</p>
+    <p>Desde playas paradisíacas hasta ciudades vibrantes, te acompañamos en cada paso de tu aventura, ofreciéndote asesoría personalizada, atención cercana y las mejores opciones del mercado.</p>
+    <p>Nuestro compromiso es hacer realidad ese viaje que siempre has soñado, con total comodidad, seguridad y confianza.</p>
+    <p>En <strong>Viajes de Ensueño</strong>, no solo vendemos viajes: creamos momentos mágicos.</p>
+    <p>Contamos con un equipo de expertos viajeros que conoce cada rincón del planeta y está listo para ayudarte a elegir el destino perfecto según tus gustos, presupuesto y estilo.</p>
+    <p>Queremos que cada viaje contigo sea tan especial como tú.</p>
+    <p>Gracias por elegirnos para ser parte de tus recuerdos más felices.</p>
+    <p>Prepárate para vivir experiencias que superen tus expectativas… ¡Tu próxima aventura comienza aquí!</p>
+  </section>
+  <div id="resultados-recomendacion" class="recomendaciones"></div>
+</main>
+
+  <footer>
+    <p>&copy; 2025 Viajes de Ensueño. Todos los derechos reservados.</p>
+  </footer>
+  <script src="travel_recommendation.js"></script>
+
 </body>
 </html>
