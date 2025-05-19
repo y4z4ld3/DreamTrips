@@ -3,6 +3,7 @@ function buscarDestinos() {
   const contenedorResultados = document.getElementById('resultados-recomendacion');
   contenedorResultados.innerHTML = '';
 
+  console.log("PalabraClave:"+palabraClave);
   if (!palabraClave) {
     contenedorResultados.innerHTML = '<p>Por favor, introduce una palabra clave.</p>';
     return;
