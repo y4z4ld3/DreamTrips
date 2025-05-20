@@ -123,12 +123,6 @@ main {
   padding: 2rem;
   gap: 2rem;
   flex-wrap: wrap;
-  max-width: 600px;
-  background-color: rgba(0, 0, 0, 0.75);
-  margin: 2rem;
-  border-radius: 10px;
-  min-height: 100%;
-  flex-direction: column;  
 }
 
 /* Sección izquierda - bienvenida */
