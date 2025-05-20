@@ -116,25 +116,26 @@ main {
   flex: 1;
 }
 
-main.contenido {
-  max-width: 800px;
-  background-color: rgba(0, 0, 0, 0.75);
+.contenido {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
   padding: 2rem;
-  margin: 2rem auto;
+  gap: 2rem;
+  flex-wrap: wrap;
+  max-width: 600px;
+  background-color: rgba(0, 0, 0, 0.75);
+  margin: 2rem;
   border-radius: 10px;
   min-height: 100%;
-  display: flex;
   flex-direction: column;  
 }
 
+/* Sección izquierda - bienvenida */
 .bienvenida {
-  max-width: 800px;
-  margin: 0 auto;
-  background-color: rgba(0, 191, 255, 0.05); /* Azul claro traslúcido */
-  padding: 2rem;
-  border-left: 6px solid turquoise;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(64, 224, 208, 0.2);
+  flex: 1;
+  min-width: 300px;
+  color: white;
 }
 
 .bienvenida h1 {
@@ -149,6 +150,29 @@ main.contenido {
   font-size: 1rem;
   margin-bottom: 1rem;
 }
+/* Sección derecha - resultados */
+.resultados {
+  flex: 1;
+  min-width: 300px;
+  color: white;
+}
+
+/* Resultados individuales */
+.recomendacion {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  color: white;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.1);
+}
+
+.recomendacion img {
+  max-width: 100%;
+  border-radius: 6px;
+  margin: 0.5rem 0;
+}
+
 
 
 h1, h2 {
@@ -196,24 +220,3 @@ footer {
   font-size: 14px;  
 }
 
-.recomendaciones {
-  margin-top: 2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
-.recomendacion {
-  background-color: rgba(255, 255, 255, 0.05);
-  border-left: 4px solid deepskyblue;
-  padding: 1rem;
-  border-radius: 8px;
-  color: white;
-}
-
-.recomendacion img {
-  max-width: 100%;
-  height: auto;
-  margin-top: 0.5rem;
-  border-radius: 6px;
-}
