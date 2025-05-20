@@ -116,13 +116,16 @@ main {
   flex: 1;
 }
 
-.contenido {
+main.contenido {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   padding: 2rem;
   gap: 2rem;
   flex-wrap: wrap;
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+  min-height: 100%;
 }
 
 /* Sección izquierda - bienvenida */
